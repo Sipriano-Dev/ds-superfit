@@ -79,3 +79,29 @@ nav img {
 .space-card p {
   padding: 20px;
 }
+
+#modality .container h2 {
+  font-family: Open Sans, sans-serif;
+  font-size: 32px;
+  color: var(--bg-red-color);
+  padding: 20px 0px;
+}
+
+.modality-card {
+  background-color: var(--bg-blue-color);
+  border-radius: 8px;
+  margin: 20px 0px;
+}
+
+.modality-card h3 {
+  color: var(--white-color);
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Open Sans, sans-serif;
+}
+
+.modality-card p {
+  color: var(--bg-gray-color);
+  padding: 20px;
+}
