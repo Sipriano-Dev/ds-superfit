@@ -5,16 +5,22 @@
   --bg-blue-color: #222374;
   --white-color: #fff;
   --bg-gray-color: #ccc;
+  --bg-black-color: #000;
 }
 
 * {
+  /*Se coloca padding, marging etc, sera descontado do tamanho do item, sem afetar a página*/
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 nav {
@@ -37,12 +43,10 @@ nav div {
   align-items: center;
 }
 
-nav div h2 {
+nav div p {
   color: var(--white-color);
   font-family: Open Sans, sans-serif;
   font-size: 14px;
-  /*Serve para tirar ou colocar negrito*/
-  font-weight: normal;
 }
 
 nav img {
@@ -104,4 +108,49 @@ nav img {
 .modality-card p {
   color: var(--bg-gray-color);
   padding: 20px;
+}
+
+footer {
+  height: 262px;
+  background-color: var(--bg-black-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container-social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container-social-media div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container-social-media img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.footer-container-social-media a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+}
+
+.direitos {
+  padding-top: 30px;
+  color: var(--white-color);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+}
+
+address p {
+  color: var(--white-color);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
 }
